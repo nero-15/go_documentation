@@ -5,6 +5,7 @@ import (
 	"log"
 
 	"example.com/greetings"
+	"github.com/google/go-cmp/cmp"
 )
 
 func main() {
@@ -30,4 +31,7 @@ func main() {
 	// to the console.
 
 	fmt.Println(messages)
+
+	// Importing packages from remote modules
+	fmt.Println(cmp.Diff("Hello World", "Hello Go"))
 }
