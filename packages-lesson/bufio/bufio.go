@@ -22,7 +22,17 @@ func main() {
 	// lines()
 
 	// https://golang.org/pkg/bufio/#example_Scanner_words
-	words()
+	// words()
+
+	// https://golang.org/pkg/bufio/#example_Writer
+	writer()
+}
+
+func writer() {
+	w := bufio.NewWriter(os.Stdout)
+	fmt.Fprint(w, "Hello, ")
+	fmt.Fprint(w, "world!")
+	w.Flush() // Don't forget to flush!
 }
 
 func words() {
