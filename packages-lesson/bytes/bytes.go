@@ -18,8 +18,13 @@ func main() {
 	// replace()
 	// runes()
 	// split()
-	title()
-	toLower()
+	// title()
+	// toLower()
+	trim()
+}
+
+func trim() {
+	fmt.Printf("[%q]", bytes.Trim([]byte(" !!! Achtung! Achtung! !!! "), "! "))
 }
 
 func toLower() {
