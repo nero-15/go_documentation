@@ -6,10 +6,16 @@ import (
 )
 
 func main() {
-	//compare()
-	//count()
-	//equal()
-	fields()
+	// compare()
+	// count()
+	// equal()
+	// fields()
+	hasPrefix()
+}
+func hasPrefix() {
+	fmt.Println(bytes.HasPrefix([]byte("Gopher"), []byte("Go")))
+	fmt.Println(bytes.HasPrefix([]byte("Gopher"), []byte("C")))
+	fmt.Println(bytes.HasPrefix([]byte("Gopher"), []byte("")))
 }
 
 func fields() {
