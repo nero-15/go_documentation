@@ -7,7 +7,18 @@ import (
 
 func main() {
 	//compare()
-	contains()
+	count()
+	equal()
+}
+
+func equal() {
+	fmt.Println(bytes.Equal([]byte("Go"), []byte("Go")))
+	fmt.Println(bytes.Equal([]byte("Go"), []byte("C++")))
+}
+
+func count() {
+	fmt.Println(bytes.Count([]byte("cheese"), []byte("e")))
+	fmt.Println(bytes.Count([]byte("five"), []byte(""))) // before & after each rune
 }
 
 func contains() {
