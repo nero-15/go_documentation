@@ -10,8 +10,15 @@ func main() {
 	// count()
 	// equal()
 	// fields()
-	hasPrefix()
+	// hasPrefix()
+	index()
 }
+
+func index() {
+	fmt.Println(bytes.Index([]byte("chicken"), []byte("ken")))
+	fmt.Println(bytes.Index([]byte("chicken"), []byte("dmr")))
+}
+
 func hasPrefix() {
 	fmt.Println(bytes.HasPrefix([]byte("Gopher"), []byte("Go")))
 	fmt.Println(bytes.HasPrefix([]byte("Gopher"), []byte("C")))
