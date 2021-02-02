@@ -13,7 +13,18 @@ func main() {
 	// hasPrefix()
 	// index()
 	// join()
-	practiceMap()
+	// practiceMap()
+	repeat()
+	//replace()
+}
+
+func replace() {
+	fmt.Printf("%s\n", bytes.Replace([]byte("oink oink oink"), []byte("k"), []byte("ky"), 2))
+	fmt.Printf("%s\n", bytes.Replace([]byte("oink oink oink"), []byte("oink"), []byte("moo"), -1))
+}
+
+func repeat() {
+	fmt.Printf("ba%s", bytes.Repeat([]byte("na"), 2))
 }
 
 func practiceMap() {
