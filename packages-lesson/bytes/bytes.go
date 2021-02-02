@@ -7,8 +7,13 @@ import (
 
 func main() {
 	//compare()
-	count()
-	equal()
+	//count()
+	//equal()
+	fields()
+}
+
+func fields() {
+	fmt.Printf("Fields are: %q", bytes.Fields([]byte("  foo bar  baz   ")))
 }
 
 func equal() {
