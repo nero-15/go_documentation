@@ -11,7 +11,13 @@ func main() {
 	// equal()
 	// fields()
 	// hasPrefix()
-	index()
+	// index()
+	join()
+}
+
+func join() {
+	s := [][]byte{[]byte("foo"), []byte("bar"), []byte("baz")}
+	fmt.Printf("%s", bytes.Join(s, []byte(", ")))
 }
 
 func index() {
