@@ -14,8 +14,16 @@ func main() {
 	// index()
 	// join()
 	// practiceMap()
-	repeat()
-	//replace()
+	// repeat()
+	// replace()
+	runes()
+}
+
+func runes() {
+	rs := bytes.Runes([]byte("go gopher"))
+	for _, r := range rs {
+		fmt.Printf("%#U\n", r)
+	}
 }
 
 func replace() {
