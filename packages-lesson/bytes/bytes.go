@@ -16,7 +16,26 @@ func main() {
 	// practiceMap()
 	// repeat()
 	// replace()
-	runes()
+	// runes()
+	// split()
+	title()
+	toLower()
+}
+
+func toLower() {
+	fmt.Printf("%s", bytes.ToLower([]byte("Gopher")))
+}
+
+func title() {
+	fmt.Printf("%s", bytes.Title([]byte("her royal highness")))
+}
+
+func split() {
+	fmt.Printf("%q\n", bytes.Split([]byte("a,b,c"), []byte(",")))
+	fmt.Printf("%q\n", bytes.Split([]byte("a man a plan a canal panama"), []byte("a ")))
+	fmt.Printf("%q\n", bytes.Split([]byte(" xyz "), []byte("")))
+	fmt.Printf("%q\n", bytes.Split([]byte(""), []byte("Bernardo O'Higgins")))
+
 }
 
 func runes() {
