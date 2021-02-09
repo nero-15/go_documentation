@@ -8,7 +8,14 @@ import (
 
 func main() {
 	// formats()
-	printers()
+	// printers()
+	errorf()
+}
+
+func errorf() {
+	const name, id = "bueller", 17
+	err := fmt.Errorf("user %q (id %d) not found", name, id)
+	fmt.Println(err.Error())
 }
 
 func printers() {
